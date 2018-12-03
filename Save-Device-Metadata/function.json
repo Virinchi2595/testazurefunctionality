@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "..\\device-xml-service-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.rrs.techolution.Function.saveDeviceMetadata",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "req",
+    "direction" : "in",
+    "authLevel" : "anonymous",
+    "methods" : [ "POST" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}
